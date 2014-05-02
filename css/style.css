@@ -1,0 +1,243 @@
+body{
+	font-family: 'Amaranth', 'sans-serif';
+	font-size: 16px;
+	color: #776E65;
+	background-color: #FAF8EF;
+}
+#content{
+	width: 100%;
+	margin: 0 auto;
+}
+
+#game{
+	position: relative;
+	width: 100%;
+	margin:0 auto;
+}
+
+#game h1{
+	font-size: 3em;
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+	margin: 10px 20px 20px 20px;
+}
+#content_board{
+	text-align: center;
+}
+
+#board{
+	width: auto;
+	position: relative;
+	padding: 3px 0px 0px 3px;
+}
+#board .row{
+	padding: 0px;
+	width: 100%;
+}
+
+#board .row .cell{
+	margin: -3px;
+	padding: 0px;
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	/*background-image: url(../horse.gif);*/
+	position: relative;
+	border: 2px solid black;
+}
+#board .row .cell:hover{
+	box-shadow: inset 0px 0px 6px green,
+				inset 0px 0px 2px green,
+				inset 0px 0px 15px green;
+}
+
+#board .row .cell img{
+	position: absolute;
+	/*
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	*/
+	width: 90%;
+	height: 90%;
+	top: 5%;
+	left: 5%;
+
+}
+
+#rules{
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+#rules .info{
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+}
+#rules p{
+	width: 90%;
+	margin-left: 5%;
+}
+
+#rules p.contact{
+	text-align: center;
+}
+#rules p a{
+	color: #423327;
+}
+
+#title{
+	width: 70%;
+	margin-left: 15%;
+	margin-bottom: 15px;
+	text-align: center;
+}
+#title div.twitter{
+	margin: 20px 0px;
+}
+
+
+#message{
+	width: 100%;
+	height: 100%; /* 1450px; */
+	background-color: rgba(250,248,239, 0.6);
+	position: absolute;
+	top: 0px; /*90px;*/
+	left: 0px;
+	text-align: center;
+	display: block;
+}
+#message #share_panel{
+	display: block;
+}
+#message div.share{
+	text-align: center;
+	margin: 0 auto;
+}
+#message div#tweet_game{
+	color: rgb(250,248,239);
+	background-color:#1B190F;
+	padding: 10px 0px 20px 0px;
+	border-radius: 0px 0px 20px 20px;
+	margin-top: -45px;
+	width: 70%;
+	margin-left: 15%;
+	text-align: center;
+}
+#message div#tweet_game #tweet_center{
+	/*width: 0%;
+	margin-left: 40%;*/
+	text-align: center;
+
+}
+
+#message p#button{
+	font-size: 2.5em;
+	font-weight: bolder;
+	background-color:#1B190F;
+	border-radius: 20px 20px 0px 0px;
+	color: rgb(250,248,239);
+	margin-top: -50px;
+	width: 70%;
+	margin-left: 15%;
+	text-align: center;
+	line-height: 80px;
+}
+#message p#button:hover{
+	cursor: pointer;
+}
+
+#message p#notification{
+	font-size: 6em;
+	font-weight: bolder;
+	color:#1B190F;
+	margin-top: 30px; /*300px;*/
+	text-shadow: 1px 1px 1px rgb(250,248,239),
+				-1px -1px 1px rgb(250,248,239);
+}
+
+.popup{
+	padding: 5px 15px 5px 15px;
+	border-radius: 3px;
+	display: inline-block;
+	vertical-align: top;
+	color: #333; /*black*/
+	font-weight: bold;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+	text-align: left;
+	font-size: 15px;
+	line-height: 15px;
+	font-family: 'Helvetica Neue',Arial,sans-serif;
+	text-decoration: none;
+	
+	background: rgb(30,87,153); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(252,252,252,1) 0%, rgba(214,214,214,1) 100%, rgba(4,5,7,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(214,214,214,1)), color-stop(100%,rgba(4,5,7,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(252,252,252,1) 0%,rgba(214,214,214,1) 100%,rgba(4,5,7,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(252,252,252,1) 0%,rgba(214,214,214,1) 100%,rgba(4,5,7,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(252,252,252,1) 0%,rgba(214,214,214,1) 100%,rgba(4,5,7,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(252,252,252,1) 0%,rgba(214,214,214,1) 100%,rgba(4,5,7,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#040507',GradientType=0 ); /* IE6-9 */
+	position: relative;
+
+
+}
+.popup:before{
+	content: "\e600 ";
+	font-family: 'icomoon';
+	color: #37B4DD;
+	padding-right: 10px;
+	font-size: 17px;
+	position: relative;
+	margin-top: 20px;
+}
+
+@media screen and (min-width: 430px){
+	#board .row .cell{
+		height:  130px;
+		width: 130px;
+	}
+}
+
+
+@media screen and (min-width: 480px){
+	/*#board .row .cell{
+		height:  130px;
+		width: 130px;
+	}*/
+	
+}
+@media screen and (min-width: 767px){
+	/*#board .row .cell{
+		height: 100px;
+		width: 100px;
+	}*/
+	#rules .info{
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 950px){
+	/*#board .row .cell{
+		height: 130px;
+		width: 130px;
+	}*/
+	#title h1{
+		width: 30%;
+		vertical-align: middle;
+		text-align: center;
+	}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tic Tac Toe | Noughts & Crosses | 3 en raya</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href='http://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
+
+	<link rel="shortcut icon" href="cross.gif" type="image/x-icon">
+
+	<script src="js/modernizr.custom.60251.js"></script>
+
+</head>
+<body>
+		<div id="content">
+		<div id="game">
+			<div id="title">
+				<div class="twitter">
+					<a href="https://twitter.com/JoseCodFacilito" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @JoseCodFacilito</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+					<a href="https://twitter.com/share" class="twitter-share-button" data-via="JoseCodFacilito" data-size="large" data-count="none" data-text="Juego de El Reto del Caballo de Ajedrez | Horse Chess Challenge Game ">Tweet</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+				</div>
+				<div>
+					<h1>Tic Tac Toe - Noughts & Crosses</h1>
+					<h1>Juego de las 3 en Raya</h1>
+				</div>
+				
+			</div>
+			<div id="content_board">
+				<div id="board">
+					<div class="rows">
+						<div class="row">
+							<div id="c02" onclick="CheckCell(0,2)" class="cell"></div>
+							<div id="c12" onclick="CheckCell(1,2)" class="cell"></div>
+							<div id="c22" onclick="CheckCell(2,2)" class="cell"></div>
+						</div>
+						<div class="row">
+							<div id="c01" onclick="CheckCell(0,1)" class="cell"></div>
+							<div id="c11" onclick="CheckCell(1,1)" class="cell"></div>
+							<div id="c21" onclick="CheckCell(2,1)" class="cell"></div>
+						</div>
+						<div class="row">
+							<div id="c00" onclick="CheckCell(0,0)" class="cell"></div>
+							<div id="c10" onclick="CheckCell(1,0)" class="cell"></div>
+							<div id="c20" onclick="CheckCell(2,0)" class="cell"></div>
+						</div>
+					</div>
+
+					
+					<div id="message">
+						<p id="notification"></p>
+						<div id="share_panel" class="share">
+						    <p id="button" onclick="hide_message()"></p> 
+							<div id="tweet_game">
+								<div id="tweet_center">
+									<div id="tweet_gameover"></div>
+								</div>
+						    </div> 
+					    </div>	    
+					</div>
+					
+				</div>
+
+
+			</div>
+			<div id="rules">
+				<div class="info">
+					<p class="english">Try put 3 cells in line. Select the cells where you want to put your crosses and when all crosses are on the board, select wich you want to move and then the new position.</p>
+					<p class="english">Game created by José Javier Villena</p>
+				</div>
+				<div class="info">
+					<p class="spanish">Intenta poner tres casillas en linea. Selecciona las casillas donde quieres poner tus tres fiches y cuando las tengas en el tablero selecciona la que quieras mover de sitio y despues su nueva posicion.</p>
+					<p class="spanish">Juego creado por José Javier Villena</p>
+				</div>
+				<div class="info">
+					<p class="contact">Twitter: <a href="https://twitter.com/JoseCodFacilito" target="_blank">@JoseCodFacilito</a></p>
+					<p class="contact">Youtube: <a href="http://youtube.com/user/jotajotavm?sub_confirmation=1" target="_blank">jotajotavm</a></p>
+					<p class="contact"><a href="https://github.com/jotajotavm/TicTacToe" target="_blank">Fork me in GitHub</a></p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<script src="js/messagemanager.js"></script>
+	<script src="js/check_manager.js"></script>
+	<script src="js/smart.js"></script>
+	<script src="js/autoplay.js"></script>
+</body>
+</html>
